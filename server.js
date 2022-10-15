@@ -38,7 +38,7 @@ function filterByQuery( query, animalsArray){
 // });
 
 // Sets route that shows the array and also console logs any query (?name=Erica for ex) as json
-app.get('/api/animals', (req, res) =>{
+app.get('./api/animals', (req, res) =>{
     let results = animals;
     if (req.query){
         results = filterByQuery(req.query, results);
